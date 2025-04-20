@@ -1,0 +1,182 @@
+/* styling.css */
+
+/* Theme colors */
+:root {
+    --bg-color: #000000;
+    --primary-color: #ff6600;
+    --text-color: #ffffff;
+    --muted-text: #cccccc;
+  }
+  
+  /* Global Reset & Base */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background-color: #111111;
+    padding: 1rem 2rem;
+  }
+  
+  nav a {
+    color: var(--text-color);
+    margin-right: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #111111;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
+  
+  /* Projects Section */
+  .filters {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filters button {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--bg-color);
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+  }
+  
+  .filters button:hover {
+    opacity: 0.8;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .project-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-card .project-content {
+    padding: 1rem;
+  }
+  
+  .project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .tech-stack span {
+    background-color: #333333;
+    color: var(--text-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  /* Contact Section */
+  #contact {
+    margin-top: 4rem;
+  }
+  
+  #contact-form {
+    background-color: #111111;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    background-color: #222222;
+    border: 1px solid #333333;
+    color: var(--text-color);
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  #contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  #contact-form button {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+  }
+  
+  #contact-form button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 1rem;
+    color: var(--muted-text);
+    margin-top: 4rem;
+  }
+  
