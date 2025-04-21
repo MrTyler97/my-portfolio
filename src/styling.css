@@ -47,13 +47,6 @@
     margin: 0 auto;
   }
   
-  /* About Section */
-  #about {
-    background-color: #111111;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 3rem;
-  }
   /* Center the pfp container */
   #pfp {
     display: flex;
@@ -75,6 +68,13 @@
     font-size: 2rem;           /* tweak as you like */
     color: var(--text-color);  /* or any color you prefer */
   }
+   /* About Section */
+   #about {
+    background-color: #111111;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
 
   #about h1 {
     color: var(--primary-color);
@@ -86,28 +86,24 @@
     color: var(--text-color);
     margin-bottom: 1.5rem;
   }
-
   
-  /* Projects Section */
-  .filters {
+  /* Experience Section */
+  #experience {
+    background-color: #111111;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
+  
+  #experience h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
     text-align: center;
-    margin-bottom: 2rem;
   }
   
-  .filters button {
-    background-color: var(--primary-color);
-    border: none;
-    color: var(--bg-color);
-    padding: 0.5rem 1.2rem;
-    margin: 0 0.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: opacity 0.3s ease;
-  }
-  
-  .filters button:hover {
-    opacity: 0.8;
+  #experience p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
   }
   
   .projects-container {
