@@ -1,6 +1,3 @@
-const navLinks = document.querySelectorAll("nav a");
-const filters = document.querySelectorAll(".filters button");
-const projectCards = document.querySelectorAll(".projects-container .project");
 const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", (e) => {
