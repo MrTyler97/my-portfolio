@@ -3,30 +3,6 @@ const filters = document.querySelectorAll(".filters button");
 const projectCards = document.querySelectorAll(".projects-container .project");
 const form = document.getElementById("contact-form");
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const targetId = e.currentTarget.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-    targetElement.scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
-
-filters.forEach((filter) => {
-  filter.addEventListener("click", (e) => {
-    const filterValue = e.currentTarget.getAttribute("data-filter");
-    projectCards.forEach((card) => {
-      if (filterValue === "all" || card.classList.contains(filterValue)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  });
-});
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);

@@ -54,6 +54,21 @@
     border-radius: 8px;
     margin-bottom: 3rem;
   }
+/* Center the pfp container */
+#pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;  /* spacing above/below */
+  }
+  
+  /* Resize the image */
+  #pfp img#resize {
+    width: 150px;    /* adjust this to taste */
+    height: auto;    /* maintain aspect ratio */
+    border-radius: 50%; /* make it circular, optional */
+    object-fit: cover;  /* if it’s non-square, this crops nicely */
+  }
   
   /* Projects Section */
   .filters {
@@ -146,7 +161,7 @@
     margin-bottom: 1rem;
     background-color: #222222;
     border: 1px solid #333333;
-    color: var(--text-color);
+    color: var(--primary-color);
     border-radius: 4px;
     font-size: 1rem;
   }
