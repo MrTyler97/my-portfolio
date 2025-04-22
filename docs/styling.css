@@ -337,6 +337,10 @@
   margin: 1rem auto;
   line-height: 1.6;
   color: var(--text-color);
+  background-color: #111111;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
 }
 
 .media-section h1 {
