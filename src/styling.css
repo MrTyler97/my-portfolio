@@ -21,6 +21,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
   }
+
+  a {
+    cursor: pointer;
+  }
   
   /* Header & Navigation */
   header {
@@ -110,6 +114,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
   }
   
   .project-card {
@@ -118,6 +123,7 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
   
   .project-card:hover {
@@ -322,6 +328,9 @@
   to   { opacity: 1; }
 }
 
+.media-section {
+  margin-top: 2rem;
+}
 /* Ensure text sits below */
 .media-section > p {
   max-width: 800px;
