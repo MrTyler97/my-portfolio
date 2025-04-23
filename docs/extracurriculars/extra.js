@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           wrapper.style.alignItems = "center";
           wrapper.style.gap = "1.5rem";
           wrapper.style.marginBottom = "2rem";
+          wrapper.style.padding = "1rem";
 
           // insert wrapper in place of the carousel
           section.insertBefore(wrapper, carousel);
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           wrapper.appendChild(para);
 
           // force the carousel to sit left at fixed width
-          carousel.style.flex = "0 0 500px";
+          carousel.style.flex = "0 0 600px";
           // allow text to fill remaining space
           para.style.flex = "1";
         }
