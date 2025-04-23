@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="docs/styling.css" />
   </head>
   <body>
-        <header>
-            <nav>
-            <!-- Navigation links -->
-            <a href="#about">About</a>
-            <a href="docs/projects/project.html">Projects</a>
-            <a href="docs/research/research.html">Research</a>
-            <a href="docs/extracurriculars/extra.html">Extracurriculars</a>
-            </nav>
-        </header>
+    <header>
+      <nav>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="docs/projects/project.html">Projects</a>
+          <a href="docs/research/research.html">Research</a>
+          <a href="docs/extracurriculars/extra.html">Extracurriculars</a>
+        </div>
+    
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/victor-tyler/" target="_blank"><img src="docs/images/Linkedin-Transparent.webp" alt="LinkedIn"></a>
+          <a href="https://github.com/MrTyler97" target="_blank">
+            <img src="docs/images/github-icon.webp" alt="GitHub">
+          </a>
+        </div>
+      </nav>
+    </header>
         <main>
           <section id="pfp">
             <img src="docs/images/PFPcopy.jpeg" alt="Profile Picture" id="resize" />
@@ -38,15 +46,18 @@
             <p>To be continued... </p>
 
             <h2>Research Assistant @ Eastern Michigan University</h2>
+            <h3>Pipeline Refactoring</h3>
             <p> At Eastern Michigan University’s Department of Chemistry, I refactored and fully automated a Linux‑based 
               Python pipeline—leveraging Git and CompuCell3D—to simulate and analyze autophagic vacuoles. By applying Agile methodologies and delivering 
               bi‑weekly updates, I boosted research workflow speed by 20% and optimized simulation parameters for greater accuracy and reliability.</p>
 
             <h2> Research Assistant @ Eastern Michigan University</h2>
+            <h3>Autonomous Drone Navigation</h3>
             <p>In my Drone Technology role, I wrote Python scripts to gather sensor data and applied nested loops and conditional logic to fine‑tune calibration—enabling 
               a drone to autonomously navigate complex mazes—and was honored with a Celebration of Excellence award.</p>
 
             <h2> Teacher Assistant & Grader @ Eastern Michigan University</h2>
+            <h3>Intro to Programming and Data Structures in Java</h3>
             <p>I served as a Teaching Assistant and Grader for Intro to Programming and Data Structures in Java—collaborating on final projects to 
               reinforce core concepts and providing hands‑on guidance in data structures, object‑oriented design, and algorithm efficiency.</p>
 
@@ -55,16 +66,23 @@
             <section id="contact">
             <!-- Contact form -->
             <form id="contact-form">
-                <input type="text" name="name" placeholder="Name" required />
+                <div id="contact-header"> 
+                  <h1>Contact</h1>
+                  <p> <img src="docs/images/phone-icon.png" alt="Phone Icon" style="width: 20px; height: 20px;"> +1 (734)-999-2924</p>
+                  <p> <img src="docs/images/email-icon.png" alt="Email Icon" style="width: 20px; height: 20px;"> mr.tyler97@hotmail.com</p>
+                </div>
+                <!-- <input type="text" name="name" placeholder="Name" required />
                 <input type="email" name="email" placeholder="Email" required />
                 <textarea name="message" placeholder="Enter Message..." required></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit">Submit</button> -->
               </form>
             </section>
         </main>
         <footer>
             <!-- Footer content -->
-            <a href="https://github.com/MrTyler97">Github</a>
+            <a href="https://github.com/MrTyler97" target="_blank">
+              <img src="docs/images/github-icon.webp" alt="GitHub" style="width: 30px; height: 30px;" >
+            </a>
         </footer>
     <script src="script.js"></script>
   </body>
